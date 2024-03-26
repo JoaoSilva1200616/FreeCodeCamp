@@ -1,0 +1,92 @@
+body{
+    background-image: url(background.jpg);
+    font-family: sans-serif;
+    font-weight: 600;
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+
+h1, p{
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 50px auto;
+    padding-bottom: 2em;
+}
+
+label, input, select{
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 4px;
+}
+
+label, input{
+    width: 98.5%;
+}
+
+select{
+    width: 100%;
+}
+
+option{
+    font-size: 18px;
+}
+
+textarea
+{
+  margin: 10px 0 0 0;
+  width: 100%;
+  resize: vertical;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-top: 3px solid #3b3b4f;
+}
+
+.container{
+    background-color:rgba(74, 0, 0, 0.9);
+    color:white;
+    width:80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+
+.inline{
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+}
+
+.main-labels{
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    margin-left: 5px;
+    width:99%;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border: none;
+    padding: 20px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(181, 172, 0);
+    color:black;
+}

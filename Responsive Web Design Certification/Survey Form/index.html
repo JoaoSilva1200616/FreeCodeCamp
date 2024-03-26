@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="grcr.png">
+      <h1 id="title">Gondomar RedCar Racing Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the Team</p>
+    </header>
+    <div>
+      <form id="survey-form">
+        <label class="main-labels" id="name-label" for="name">Name <input id="name" name="name" type="text" required
+            placeholder="Enter your name"></label>
+        <label class="main-labels" id="email-label" for="email">Email <input id="email" name="email" type="email"
+            required placeholder="Enter your email"></label>
+        <label class="main-labels" id="age-label" for="age">Age (optional) <input id="age" name="age" type="number"
+            min="13" max="120" placeholder="Enter your age"></label>
+        <label class="main-labels" id="number-label" for="number">How many years have you been part of the team? <input
+            id="number" name="number" type="number" min="1" max="20" required placeholder="Enter your age"></label>
+        <label class="main-labels" id="dropdown-label" for="dropdown">What is your role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Driver</option>
+            <option value="2">Race Engineer</option>
+            <option value="3">Mechanical Engineer</option>
+          </select>
+        </label>
+        <fieldset>
+          <label class="main-labels" id="radio-label">Would you recommend Gondomar RedCar Racing?</label>
+          <label><input name="user-recommend" value="Definitely" type="radio" class="inline">Definitely</label>
+          <label><input name="user-recommend" value="Maybe" type="radio" class="inline">Maybe</label>
+          <label><input name="user-recommend" value="Not sure" type="radio" class="inline">Not sure</label>
+        </fieldset>
+        <fieldset>
+          <label class="main-labels" id="sims-label">What simulators do you use?</label>
+          <label for="iracing">
+            <input class="inline" id="iracing" value="iracing" type="checkbox" name="iracing" /> iRacing
+          </label>
+          <label for="ac">
+            <input class="inline" id="ac" value="ac" type="checkbox" name="ac" /> Assetto Corsa
+          </label>
+          <label for="ac2">
+            <input class="inline" id="ac2" value="ac2" type="checkbox" name="ac2" /> Assetto Corsa Competizione
+          </label>
+          <label for="gt7">
+            <input class="inline" id="gt7" value="gt7" type="checkbox" name="gt7" /> Gran Turismo 7
+          </label>
+          <label for="rf2">
+            <input class="inline" id="rf2" value="rf2" type="checkbox" name="rf2" /> rFactor 2
+          </label>
+          <label for="a2">
+            <input class="inline" id="a2" value="a2" type="checkbox" name="a2" /> Automobilista 2
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label class="main-labels" for="experience">Tell about your experience since you work here:
+            <textarea id="experience" name="experience" rows="4" cols="60"
+              placeholder="Since I work here my experience has been..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
