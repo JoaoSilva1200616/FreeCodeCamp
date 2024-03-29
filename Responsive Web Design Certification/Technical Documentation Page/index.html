@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Technical Documentation Page" />
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <header>Web Programming Languages</header>
+    <a class="nav-link" href="#About">About</a>
+    <a class="nav-link" href="#HTML">HTML</a>
+    <a class="nav-link" href="#CSS">CSS</a>
+    <a class="nav-link" href="#JavaScript">JavaScript</a>
+    <a class="nav-link" href="#PHP">PHP</a>
+    <a class="nav-link" href="#Python">Python</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="About">
+      <header>About</header>
+      <p>
+        Welcome to the Programming Languages Overview website! This site provides a brief introduction to some of the
+        most popular programming languages used in web development: HTML, CSS, JavaScript, and PHP. Each section
+        includes a description of the language, its best uses, and a code example to help you understand its
+        fundamentals.
+      </p>
+    </section>
+
+    <section class="main-section" id="HTML">
+      <header>HTML</header>
+      <p>
+        HTML is the standard markup language for creating web pages and web applications. It describes the structure
+        of a web page using markup.
+      </p>
+      <p>Best uses of HTML include:</p>
+      <ul>
+        <li>Web Page Structure</li>
+        <li>Content Presentation</li>
+        <li>Form Creation</li>
+        <li>Hyperlinking</li>
+        <li>Accessibility Features</li>
+      </ul>
+      <p>HTML elements are represented by tags, which are used to define and display content on the web page.</p>
+      <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section class="main-section" id="CSS">
+      <header>CSS</header>
+      <p>
+        CSS is a stylesheet language used to describe the presentation of a document written in HTML. It controls the
+        layout, colors, and fonts of a web page.
+      </p>
+      <p>Best uses of CSS include:</p>
+      <ul>
+        <li>Web Page Styling</li>
+        <li>Responsive Design</li>
+        <li>Animations and Transitions</li>
+        <li>Layout Customization</li>
+        <li>Typography</li>
+      </ul>
+      <p>CSS selectors target HTML elements and apply styling rules to change their appearance.</p>
+      <pre><code>h1 {
+color: blue;
+font-size: 24px;
+}</code></pre>
+    </section>
+
+    <section class="main-section" id="JavaScript">
+      <header>JavaScript</header>
+      <p>
+        JavaScript is a high-level, interpreted programming language that enables interactive web pages and web
+        applications. It is widely used for client-side scripting.
+      </p>
+      <p>Best uses of JavaScript include:</p>
+      <ul>
+        <li>Dynamic Web Content</li>
+        <li>User Interactions</li>
+        <li>Form Validations</li>
+        <li>API Integration</li>
+        <li>Event Handling</li>
+      </ul>
+      <p>JavaScript can manipulate the DOM, handle events, and communicate with servers to create dynamic web
+        applications.</p>
+      <pre><code>document.getElementById('demo').innerHTML = 'Hello, World!';</code></pre>
+    </section>
+
+    <section class="main-section" id="PHP">
+      <header>PHP</header>
+      <p>
+        PHP is a server-side scripting language designed for web development. It can be embedded into HTML and is
+        often used to create dynamic web pages and web applications.
+      </p>
+      <p>Best uses of PHP include:</p>
+      <ul>
+        <li>Server-side Web Development</li>
+        <li>Database Interactions</li>
+        <li>Content Management Systems</li>
+        <li>E-commerce Websites</li>
+        <li>Web APIs</li>
+      </ul>
+      <p>PHP scripts are executed on the server, generating HTML content that is then sent to the client's browser.</p>
+      <pre><code>&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre>
+    </section>
+
+    <section class="main-section" id="Python">
+      <header>Python</header>
+      <p>
+        Python is a high-level, interpreted programming language known for its simplicity and readability. It supports
+        multiple programming paradigms and is widely used in web development, data science, artificial intelligence,
+        and more.
+      </p>
+      <p>Best uses of Python include:</p>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Analysis and Visualization</li>
+        <li>Artificial Intelligence and Machine Learning</li>
+        <li>Scripting and Automation</li>
+        <li>Game Development</li>
+      </ul>
+      <p>Python's syntax allows programmers to write clear and concise code, making it easy to learn and understand.</p>
+      <pre><code>def greet(name):
+return f'Hello, {name}!'
+
+print(greet('Alice'))  # Output: Hello, Alice!</code></pre>
+    </section>
+  </main>
+</body>
+
+</html>
