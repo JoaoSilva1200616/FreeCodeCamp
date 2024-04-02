@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="https://i.ibb.co/D58sKtm/Gondomar-Red-Car-Racing.png" loading="lazy">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#competition">Competition</a>
+            <a class="nav-link" href="#history">History</a>
+            <a class="nav-link" href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Gondomar RedCar Racing is a multinational team, comprising of some of the fastest sim-racers in the world.
+            We have been at the forefront of sim-racing for over 6 months, winning major championships, advising on
+            sim-racing and developing products with partners.</p>
+        <p>Founded over 6 months ago, we have entered and won hundreds of major titles, competing at
+            the
+            highest level. We are a multinational team, from Europe, the US and Asia and have a mix of real and virtual
+            drivers. We are proudly supported by Heusinkveld,
+            Simucube and Sim Lab.</p>
+    </section>
+
+    <section id="competition">
+        <h1>Competition</h1>
+        <p>We compete in the highest level of sim-racing esports, such as the Le Mans Virtual
+            Series, Porsche
+            Supercup
+            Esports Series, IMSA Esports and Low Fuel Motorsports and are known as the most successful sim-racing
+            team
+            of
+            all time across multiple titles.</p>
+        <p>Some of our achievements include getting a podium in Nurburgring in the Aston Martin
+            GT3.</p>
+        <img src="https://coachdaveacademy.com/wp-content/uploads/2021/05/banner-image-takingbestphotosinacc.jpg"
+            alt="sim racing image" loading="lazy" class="image-1">
+
+
+    </section>
+
+    <section id="history">
+        <h1>History</h1>
+        <p>We don't have a lot of history but we are famous for our World Record lap time in Mount Panorama in Assetto
+            Corsa Competizione ( <span class="bold">1:59.062</span> )</p>
+        <p>Here you can see the recording of the lap:</p>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FRUtevaLVjI?si=Ab3feB_Yw7TPCGHB"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="contacts">
+        <h1>Contacts</h1>
+        <p class="contacts">If you want to contact us please enter your email and we will reach out to you.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" type="email" id="email" placeholder="Please enter your email...">
+            <input type="submit" id="submit" value="Submit email">
+        </form>
+        <p>If you want to find us on our social media you also can:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
