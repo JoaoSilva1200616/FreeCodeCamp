@@ -1,0 +1,149 @@
+:root{
+    --color1:rgb(38, 39, 112);
+    --color2:linen;
+    --color3:rgb(252, 121, 7);
+    --height: 1000px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    position:fixed;
+    background: linear-gradient(-45deg,var(--color3), rgb(252, 140, 41));
+    width:100%;
+    max-height: 20%;
+    place-items: center;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#navbar a{
+    font-size: 2rem;
+    color:var(--color1);
+    font-weight: bold;
+    padding: 10px 30px;
+    overflow: hidden;
+}
+
+#navbar a:hover{
+    background-color: var(--color1);
+    color:var(--color2);
+}
+
+#welcome-section{
+    top:10%;
+    width:100%;
+    height:var(--height);
+    color: var(--color2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg,rgb(109, 91, 73) 0%,rgb(16, 21, 34));
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#welcome-section h2{
+    color:var(--color3);
+    font-weight: normal;
+}
+
+#projects{
+    width:100%;
+    height:var(--height);
+    color: var(--color2);
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg,var(--color1) 0%,rgb(16, 21, 34));
+}
+
+
+.project-tile a{
+    margin-top: 50px;
+    font-size: 5rem;
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile a:hover{
+    color:var(--color3)
+}
+
+#contact{
+    width:100%;
+    height:var(--height);
+    color: var(--color2);
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(41, 41, 41),rgb(46, 37, 27));
+}
+
+.links{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 2fr;
+    align-items: center;
+}
+
+.links a{
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 3rem;
+    margin:100px;
+}
+
+.links a:hover{
+    transform: translateY(-5px) translateX(5px);
+}
+
+@media only screen and (max-width: 550px) {
+    :root{
+        --height:200px;
+    }
+    html {
+        font-size: 32.5%;
+    }
+  }
+
+  
+  
+  @media  only screen and (max-width: 650px) {
+    :root{
+        --height:400px;
+    }
+    html {
+        font-size: 32.5%;
+    }
+  }
+
+    
+  @media  only screen and (max-width: 450px) {
+    :root{
+        --height:250px;
+    }
+    html {
+        font-size: 20.5%;
+    }
+  }

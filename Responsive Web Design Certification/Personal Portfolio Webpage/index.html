@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Hey, I'm João</h1>
+        <h2>a Software Developer</h2>
+    </section>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project-tile">
+            <h2>For now all my project are on my GitHub Page</h2>
+            <a id="profile-link" href="https://github.com/JoaoSilva1200616" target="_blank"><i
+                    class="fab fa-github"></i>
+                GitHub</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="links">
+            <a href="https://www.gmail.com/" target="_blank">
+                Gmail
+            </a>
+            <a href="tel:999999999" target="_blank">
+                Phone
+            </a>
+        </div>
+    </section>
+
+
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
