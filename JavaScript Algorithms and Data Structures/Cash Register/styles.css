@@ -1,0 +1,76 @@
+body {
+  background-color: #1c1b2b;
+  color: #f0e68c;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #f0e68c;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input[type="number"] {
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #8b4513;
+  color: #f0e68c;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a0522d;
+}
+
+.cash-register {
+  display: inline-block;
+  background-color: #1c3a5a;
+  border: 2px solid #f0e68c;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+.total {
+  font-size: 1.5em;
+  background-color: #000;
+  color: #f0e68c;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.cash-drawer {
+  background-color: #222;
+  color: #f0e68c;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#change-due {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
